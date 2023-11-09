@@ -27,8 +27,11 @@ form.addEventListener('input', throttle(() => {
 }, 500));
 
 
-form.addEventListener('submit', () => {
-  localStorage.removeItem(storageKey);
+form.addEventListener('submit', (event) => {
+  event.preventDefault()
+
+
+  
 
   const formData = {
     email: emailInput.value,
@@ -36,8 +39,7 @@ form.addEventListener('submit', () => {
   };
 
   console.log('Form data submitted:', formData);
+  localStorage.removeItem(storageKey);
+  event.currentTarget.reset();
 });
-
-
-
 
