@@ -5,7 +5,7 @@
   "homepage": "https://serhii-kuzmin.github.io/Image-gallery-Video-playback-Feedback-form/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
+    "build": "parcel build src/*.html --public-url /Image-gallery-Video-playback-Feedback-form/"
   },
   "repository": {
     "type": "git",
